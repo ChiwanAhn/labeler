@@ -1,20 +1,51 @@
+:root {
+  --bgColor: white;
+  --textColor: rgb(33, 33, 33);
+}
+
+button:focus {
+  outline: 0;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: var(--bgColor);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--textColor);
+}
+
+.container {
+  padding: 2%;
+}
+
+.input {
+  width: 100%;
+  background-color: var(--bgColor);
+  /* padding: 16px; */
+  color: var(--textColor);
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  border-radius: 4px;
+  resize: none;
+}
+.badgesContainer {
+  position: absolute;
+}
+
+.svgContainer {
+  padding: 40px 0;
+}
+
+.svgContainer > svg {
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+
+.svgContainer.active > svg {
+  cursor: pointer;
+}
+
+.svgContainer > svg:hover {
+  box-shadow: 0px 4px 10px 4px rgb(0, 0, 0, 0.1);
 }
 
 .App-link {
