@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import clsx from 'clsx'
 import uuid from 'uuid/v4'
 import './App.css'
-import { exampleSVG } from './exampleSvg'
 import Badge from './Badge'
 
 function App() {
