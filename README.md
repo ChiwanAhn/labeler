@@ -2,4 +2,4 @@
 
 ## Demo
 
-link: [svg-labeler.herokuapp.com/]
+link: <svg-labeler.herokuapp.com/>
